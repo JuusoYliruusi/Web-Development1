@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Debugging Challenge</h1>
+    <script>
+        // This code is broken! Find and fix the errors.
+        let i = 5;
+        let j = 10;
+        let k = 25;
+        let l = "Joe"; // Joe was fixed by adding missing quotes.
+        const arr = [3, 5, 7];
+        if (i < j) {
+            console.log("i is less than j");
+        } else if (j > k) {
+            console.log("j is greater than k");
+        } else {
+            console.log("j"); // Fixed by adding the other missing quote.
+        }
+        for (let i = 0; i < arr.length; i++) { // Fixed: Changed 3 to arr.length to avoid index error
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+</html>
