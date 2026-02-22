@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser compatibility</title>
+</head>
+<body>
+    <button id="compatBtn">Compatible Click</button>
+    <script>
+        var btn = document.getElementById('compatBtn');
+        function compatClick() { alert('Compatible!'); }
+        if (window.addEventListener) {
+            btn.addEventListener('click', compatClick);
+        } else if (window.attachEvent) {
+            btn.attachEvent('onclick', compatClick);
+        }
+    </script>
+</body>
+</html>

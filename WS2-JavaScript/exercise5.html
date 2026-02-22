@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img id="randomImage" width="300">
+<script>
+    var images = [
+        "https://upload.wikimedia.org/wikipedia/fi/3/31/Scrooge.jpg",
+        "https://upload.wikimedia.org/wikipedia/fi/d/d4/Don_Rosan_Aku_Ankka.png",
+        "https://static.wikia.nocookie.net/akupedia/images/d/da/433434434343564256422474.gif/revision/latest/scale-to-width-down/211?cb=20160611100315&path-prefix=fi"
+    ];
+    var randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("randomImage").src = images[randomIndex];
+</script>
+</body>
+</html>

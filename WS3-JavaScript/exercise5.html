@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic listeners</title>
+</head>
+<body>
+     <h1 id="myH1">Click me!</h1>
+    <button onclick="removeListener()">Remove Listener</button>
+    <script>
+        let element = document.getElementsByTagName('h1')[0]; //is this working the way it should?
+        function sayHello() { alert("Hello World!"); }
+        element.addEventListener("click", sayHello);
+        function removeListener() {
+            element.removeEventListener("click", sayHello);
+            console.log("Listener removed!");
+        }
+    </script>
+</body>
+</html>
