@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Elements</title>
+</head>
+<body>
+    <h1>Dynamic Element Creation Demonstration</h1>
+    <button id="addParagraphBtn">Add New Paragraph</button>
+    <button id="addListItemBtn">Add New List Item</button>
+    <ul id="myList">
+        <li>Existing List Item 1</li>
+    </ul>
+
+    <script>
+        let paragraphCount = 0;
+        document.getElementById('addParagraphBtn').addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+            paragraphCount += 1;
+            newParagraph.textContent = `Dynamically created paragraph number ${paragraphCount}`;
+            newParagraph.style.color = 'blue';
+            document.body.appendChild(newParagraph);
+        });
+
+        let listItemCount = 1;
+        document.getElementById('addListItemBtn').addEventListener('click', () => {
+            const newListItem = document.createElement('li');
+            listItemCount += 1;
+            newListItem.textContent = `New List Item ${listItemCount}`;
+            const myList = document.getElementById('myList');
+            myList.appendChild(newListItem);
+        });
+    </script>
+</body>
+</html>
