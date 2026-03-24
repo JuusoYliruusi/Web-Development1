@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f1eade;
+  color: #333;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f1eade;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.mood-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+} 
+
+.mood-picker button {
+  font-size: 3rem;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mood-picker button:hover {
+  background: #e6f0ff;
+  transform: scale(1.08);
+}
+
+.mood-picker button.selected {
+  border-color: #4964d6;
+  background: #e6f0ff; 
+  box-shadow: 0 0 0 4px rgba(73,100,214,0.2);
+  transform: scale(1.12); 
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600; 
+} 
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#save-btn {
+  margin-top: 12px;
+  width: 100%;
+  background: #4964d6;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#save-btn:hover {
+  background: #2e3a8c;
+} 
+
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+#filter button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f9f9f9;
+  cursor: pointer;
+} 
+
+#filter button:hover {
+  background: #e6f0ff;
+}
+
+#filter button.active {
+  border-color: #4964d6;
+  background: #e6f0ff;
+  font-weight: 700;
+} 
+
+.entry {
+  padding: 16px 0; 
+  border-bottom: 1px solid #eee;
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.entry button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.entry button:hover {
+  background: #cc0000;
+}
+
+#stats {
+  margin: 16px 0;
+  padding: 12px;
+  background: #f0f8ff;
+  border-radius: 8px; 
+}

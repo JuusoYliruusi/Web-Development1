@@ -1,0 +1,1 @@
+This is my web development project 1. I made this mood tracker with the provided instructions with some little changes where you can choose your current mood and make little notes and it will be saved.
