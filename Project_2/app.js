@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderHistory();
     }
 
-    // 🎨 RANDOM COLOR HISTORY PILLS
     function renderHistory() {
         historyPanel.innerHTML = history.map(t => {
             const color = `hsl(${Math.random() * 360}, 70%, 80%)`;
@@ -89,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ⭐ RENDER WITH RATING + ALERT BUTTON
     function renderResults(data) {
         status.textContent = isShowingFavs
             ? `Favorites (${data.length})`
@@ -134,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
             : renderResults(currentResults);
     };
 
-    // 🔔 ALERT FUNCTION
     window.showAlert = (url) => {
         alert("Official Page:\n" + url);
     };
